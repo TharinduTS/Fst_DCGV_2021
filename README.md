@@ -17,6 +17,16 @@ pop_list.txt
 JM_no_label1_Draken_CCACGT_cuttrim_sorted_final_l_only.bam      popC
 JM_no_label2_Draken_TTCAGA_cuttrim_sorted_final_l_only.bam      popD
 ```
+
+Loaded pythin
+```bash
+module load python/3.8.2
+virtualenv --no-download ~/ENV
+source ~/ENV/bin/activate
+pip install --no-index --upgrade pip
+pip install numpy --no-index
+```
+
 Then calculated Fst values by
 
 ```bash
