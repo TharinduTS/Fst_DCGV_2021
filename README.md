@@ -243,8 +243,8 @@ close DATAINPUT;
 #SBATCH --job-name=bwa_505
 #SBATCH --nodes=1
 #SBATCH --ntasks-per-node=1
-#SBATCH --time=8:00:00
-#SBATCH --mem=16G
+#SBATCH --time=36:00:00
+#SBATCH --mem=32G
 #SBATCH --output=bwa505.%J.out
 #SBATCH --error=bwa505.%J.err
 #SBATCH --account=def-ben
