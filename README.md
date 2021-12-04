@@ -66,7 +66,8 @@ for i in *.geno ; do python popgenWindows.py -w 50000 -m 50 -g ${i} -o ${i}_outp
 
 ```
 ******* seems like there is a little bug in the script and it leaves one pop combination in resulte. Therefore running only those two, seperately this time *****
-
+P.S. could be due to different numbering in perl??
+(try giving column number for the first fst value -1 next time for jackknife??)
 ``` bash
 for i in *.geno ; do python popgenWindows.py -w 50000 -m 50 -g ${i} -o ${i}_output_Inhaca_Draken.csv.gz -f phased -p Inhaca 2014_Inhaca_10_Inhaca_ATATGT_cuttrim_sorted.bam,2014_Inhaca_150_Inhaca_ATCGTA_cuttrim_sorted.bam,2014_Inhaca_152_Inhaca_CATCGT_cuttrim_sorted.bam,2014_Inhaca_24_Inhaca_CGCGGT_cuttrim_sorted.bam,2014_Inhaca_38_Inhaca_CTATTA_cuttrim_sorted.bam,2014_Inhaca_52_Inhaca_GCCAGT_cuttrim_sorted.bam,2014_Inhaca_65_Inhaca_GGAAGA_cuttrim_sorted.bam -p Draken 946_Draken_TCGTT_cuttrim_sorted.bam,993_Draken_GGTTGT_cuttrim_sorted.bam,JM_no_label1_Draken_CCACGT_cuttrim_sorted.bam,JM_no_label2_Draken_TTCAGA_cuttrim_sorted.bam 
 ```
