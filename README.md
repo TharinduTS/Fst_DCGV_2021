@@ -87,8 +87,10 @@ Change file name and column name
 head l_only_output.csv | sed -e 's:,: :g' | tr -s ' ' '\n' | nl -nln |  grep "Fst_Inhaca_Draken" | cut -f1
 ```
 3. change "selected columns" in the line,
+
+**** Perl number system starts with 0. Therefore always substract 1 from the value you get from previouc command to match it for the perl script ****
 ```
-my @selected_chrs = (97..174);
+my @selected_chrs = (96..173);
 ```
 to the column numbers with values you want to use jackknife for
 
@@ -112,7 +114,7 @@ my $inputfile = $ARGV[0];
 print "pop1","\t","pop2","\t","Fst","\t","CI_1","\t","CI2","\n";
 
 #loop for selected columns
-my @selected_chrs = (97..174);
+my @selected_chrs = (96..173);
 
 for my $j (@selected_chrs){
 
