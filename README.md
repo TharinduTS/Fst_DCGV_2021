@@ -77,6 +77,7 @@ unzip all csv outputs
 gunzip *.gz
 ```
 
+# jackknife
 Then 
 
 1.save this jackknife script in the same directory as CSVs above
