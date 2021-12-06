@@ -95,7 +95,7 @@ my @selected_chrs = (96..173);
 ```
 to the column numbers with values you want to use jackknife for
 
-in this case it is first column with Fst values (97/starting Fst.. in output CSV) and the last (174)
+in this case it is first column with Fst values (96/starting Fst.. in output CSV) and the last (173)
 
 
 test_block_jackknife_withFst.pl
